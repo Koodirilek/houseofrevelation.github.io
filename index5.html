@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Glory International Church | The House of Revelation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Previous CSS remains the same, just adding new styles for giving section */
+        
+        /* Giving Section */
+        .giving {
+            background: var(--light);
+            text-align: center;
+        }
+        
+        .giving-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .giving-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .giving-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .giving-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .giving-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .bank-details {
+            text-align: left;
+            background: rgba(142, 68, 173, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .bank-details p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .bank-details strong {
+            display: inline-block;
+            width: 150px;
+            color: var(--primary);
+        }
+        
+        .giving-cta {
+            margin-top: 40px;
+        }
+        
+        .giving-cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Previous sections remain the same until before Contact section -->
+
+    <!-- Giving Section -->
+    <section class="section giving" id="giving">
+        <div class="container">
+            <div class="section-title">
+                <h2>Giving & Offerings</h2>
+                <p>Your generous giving helps us fulfill our mission and spread the gospel. We appreciate your support.</p>
+            </div>
+            
+            <div class="giving-options">
+                <div class="giving-card">
+                    <div class="giving-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Bank Transfer</h3>
+                    <p>You can give your tithes and offerings directly to our church bank account:</p>
+                    
+                    <div class="bank-details">
+                        <p><strong>Bank Name:</strong> FIRST NATIONAL BANK</p>
+                        <p><strong>Account Name:</strong> PROGRESSIVE GLORY INTERNATIONAL</p>
+                        <p><strong>Account Number:</strong> 62840795647</p>
+                        <p><strong>Branch Name:</strong> MAIN BRANCH</p>
+                        <p><strong>Branch Code:</strong> 288367</p>
+                        <p><strong>SWIFT CODE:</strong> FIRNBWGX</p>
+                    </div>
+                </div>
+                
+                <div class="giving-card">
+                    <div class="giving-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Giving</h3>
+                    <p>Coming soon! We'll soon enable mobile money giving options for your convenience.</p>
+                </div>
+                
+                <div class="giving-card">
+                    <div class="giving-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>In-Person Giving</h3>
+                    <p>You can also give during any of our church services. Offering baskets are passed during each service.</p>
+                </div>
+            </div>
+            
+            <div class="giving-cta">
+                <p>"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." <br><strong>2 Corinthians 9:7</strong></p>
+                <a href="#contact" class="btn">Need Help With Giving?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (now comes after Giving) -->
+    <section class="section contact" id="contact">
+        <!-- Previous contact section content remains the same -->
+    </section>
+
+    <!-- Footer remains the same -->
+
+    <script>
+        // Update the navigation to include Giving link
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav ul');
+            const givingLink = document.createElement('li');
+            givingLink.innerHTML = '<a href="#giving">Giving</a>';
+            // Insert before Contact link
+            nav.insertBefore(givingLink, nav.querySelector('li:last-child'));
+        });
+
+        // Rest of your JavaScript remains the same
+    </script>
+</body>
+</html>
